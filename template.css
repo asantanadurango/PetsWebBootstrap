@@ -1,4 +1,4 @@
-/* @import url(normalizes/estilosGenerales.css);
+/* @import url(normalizesli/estilosGenerales.css);
 @import url(components/navbar/navbar.css);
 @import url(components/about/about.css);
 @import url(components/gallery/gallery.css);
@@ -40,6 +40,7 @@ img {
 a {
    outline: none;
    text-decoration: none;
+   cursor: pointer;
 }
 
 ol,
@@ -408,6 +409,20 @@ button {
    color: #eee;
 }
 
+.slider__text > h2 {
+   margin: 15px 0;
+}
+
+.slider__text > h2 > a {
+   color: lime;
+   border-bottom: 2px solid lime;
+   cursor: pointer;
+}
+
+.slider__text > p {
+   color: lightgreen;
+}
+
 .controls {
    position: relative;
    color: #eee;
@@ -471,6 +486,7 @@ button {
 
 .changeImg {
    opacity: 1;
+   z-index: 10000;
 }
 
 @media (min-width: 361px) {
